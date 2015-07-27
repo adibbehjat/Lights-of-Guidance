@@ -1,4 +1,5 @@
-# Lights of Guidance (Baha'i Guidance Library)
+# Lights of Guidance 
+## (Baha'i Guidance Library)
 
 ## What it is?
 I crawled the  *Lights of Guidance* page (http://bahai-library.com/hornby_lights_guidance), cleaned the HTML, and then built a JSON data format of the whole guidance available for developers and designers.
