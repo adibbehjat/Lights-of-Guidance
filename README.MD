@@ -21,12 +21,12 @@ The available *Lights of Guidance* page is useful; however, it is very cluncky a
 ## Data Structure
 
 There are three branches/nodes in the JSON data format:
-* main_topics
+* **main_topics**
     * Position is based on roman numerals (I, II, III, IV, etc.)
     * Some main_topic items do not have sub_topics, but have subjects
-* sub_topics
+* **sub_topics**
     * Position is alphabetical (A, B, C, etc.)
-* subjects
+* **subjects**
     * Organized by numbers
     * Numbers are in string format
 
@@ -73,7 +73,7 @@ There are three branches/nodes in the JSON data format:
 
 ### Example
 
-Here is how you can access the data using Python, note you need to encode into UTF-8 if you don't want it to vomit:
+Here are few examples on how you can access the data using Python. Note you need to encode into UTF-8 if you don't want it to crash or yield error:
 
 
 
@@ -90,7 +90,7 @@ print data['main_topic']['ADMINISTRATIVE ORDER']['subjects']
 for subtopic in data['sub_topics']:
   print subtopic.encode('utf8')
 
-# Print the guidance that has the number 63
+# Print the guidance that has subject number 63
 print data['subjects']['63']['guidance'].encode('utf8')
 ```
 
